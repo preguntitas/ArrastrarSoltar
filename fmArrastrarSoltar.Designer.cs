@@ -38,15 +38,15 @@
             this.button6 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.cmnPapelera = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.itcAbrir = new System.Windows.Forms.ToolStripMenuItem();
+            this.vaciarPapeleraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btPapelera = new System.Windows.Forms.Button();
             this.btBorraTodo2 = new System.Windows.Forms.Button();
             this.btBorra2 = new System.Windows.Forms.Button();
             this.btBorraTodo1 = new System.Windows.Forms.Button();
             this.btBorra1 = new System.Windows.Forms.Button();
-            this.cmnPapelera = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.itcAbrir = new System.Windows.Forms.ToolStripMenuItem();
-            this.vaciarPapeleraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.cmnPapelera.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,6 +143,34 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "label3";
             // 
+            // cmnPapelera
+            // 
+            this.cmnPapelera.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.itcAbrir,
+            this.toolStripSeparator1,
+            this.vaciarPapeleraToolStripMenuItem});
+            this.cmnPapelera.Name = "cmnPapelera";
+            this.cmnPapelera.Size = new System.Drawing.Size(154, 54);
+            // 
+            // itcAbrir
+            // 
+            this.itcAbrir.Name = "itcAbrir";
+            this.itcAbrir.Size = new System.Drawing.Size(153, 22);
+            this.itcAbrir.Text = "Abrir";
+            this.itcAbrir.Click += new System.EventHandler(this.btPapelera_Click);
+            // 
+            // vaciarPapeleraToolStripMenuItem
+            // 
+            this.vaciarPapeleraToolStripMenuItem.Name = "vaciarPapeleraToolStripMenuItem";
+            this.vaciarPapeleraToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.vaciarPapeleraToolStripMenuItem.Text = "Vaciar Papelera";
+            this.vaciarPapeleraToolStripMenuItem.Click += new System.EventHandler(this.vaciarPapeleraToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(150, 6);
+            // 
             // btPapelera
             // 
             this.btPapelera.AllowDrop = true;
@@ -204,34 +232,6 @@
             this.btBorra1.TabIndex = 1;
             this.btBorra1.UseVisualStyleBackColor = true;
             this.btBorra1.Click += new System.EventHandler(this.btBorra1_Click);
-            // 
-            // cmnPapelera
-            // 
-            this.cmnPapelera.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.itcAbrir,
-            this.toolStripSeparator1,
-            this.vaciarPapeleraToolStripMenuItem});
-            this.cmnPapelera.Name = "cmnPapelera";
-            this.cmnPapelera.Size = new System.Drawing.Size(181, 76);
-            // 
-            // itcAbrir
-            // 
-            this.itcAbrir.Name = "itcAbrir";
-            this.itcAbrir.Size = new System.Drawing.Size(180, 22);
-            this.itcAbrir.Text = "Abrir";
-            this.itcAbrir.Click += new System.EventHandler(this.btPapelera_Click);
-            // 
-            // vaciarPapeleraToolStripMenuItem
-            // 
-            this.vaciarPapeleraToolStripMenuItem.Name = "vaciarPapeleraToolStripMenuItem";
-            this.vaciarPapeleraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.vaciarPapeleraToolStripMenuItem.Text = "Vaciar Papelera";
-            this.vaciarPapeleraToolStripMenuItem.Click += new System.EventHandler(this.vaciarPapeleraToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(150, 6);
             // 
             // fmArrastrarSoltar
             // 
