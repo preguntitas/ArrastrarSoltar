@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmPapelera));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btSeleccionados = new System.Windows.Forms.Button();
             this.btTodos = new System.Windows.Forms.Button();
@@ -140,11 +139,11 @@
             this.Controls.Add(this.lbPapelera);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "fmPapelera";
-            this.Text = "fmPapelera";
+            this.ShowIcon = false;
+            this.Text = "Papelera de Reciclaje";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fmPapelera_FormClosing);
             this.panel1.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
