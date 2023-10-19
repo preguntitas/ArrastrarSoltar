@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fmAcercade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmAcercade.Designer.cs">
+      <DependentUpon>fmAcercade.cs</DependentUpon>
+    </Compile>
     <Compile Include="fmArrastrarSoltar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmAcercade.resx">
+      <DependentUpon>fmAcercade.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fmArrastrarSoltar.resx">
       <DependentUpon>fmArrastrarSoltar.cs</DependentUpon>
     </EmbeddedResource>

@@ -119,6 +119,7 @@
             this.btAcercade.TabIndex = 9;
             this.btAcercade.Text = "Acerca de";
             this.btAcercade.UseVisualStyleBackColor = true;
+            this.btAcercade.Click += new System.EventHandler(this.btAcercade_Click);
             // 
             // btSalir
             // 

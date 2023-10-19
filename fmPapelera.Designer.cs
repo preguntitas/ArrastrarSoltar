@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmPapelera));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btVaciar = new System.Windows.Forms.Button();
-            this.btTodos = new System.Windows.Forms.Button();
             this.btSeleccionados = new System.Windows.Forms.Button();
+            this.btTodos = new System.Windows.Forms.Button();
+            this.btVaciar = new System.Windows.Forms.Button();
             this.lbPapelera = new System.Windows.Forms.ListBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.vaciarPapeleraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,15 +55,15 @@
             this.panel1.Size = new System.Drawing.Size(484, 100);
             this.panel1.TabIndex = 0;
             // 
-            // btVaciar
+            // btSeleccionados
             // 
-            this.btVaciar.Location = new System.Drawing.Point(59, 35);
-            this.btVaciar.Name = "btVaciar";
-            this.btVaciar.Size = new System.Drawing.Size(75, 46);
-            this.btVaciar.TabIndex = 0;
-            this.btVaciar.Text = "Vaciar Papelera";
-            this.btVaciar.UseVisualStyleBackColor = true;
-            this.btVaciar.Click += new System.EventHandler(this.btVaciar_Click);
+            this.btSeleccionados.Location = new System.Drawing.Point(337, 35);
+            this.btSeleccionados.Name = "btSeleccionados";
+            this.btSeleccionados.Size = new System.Drawing.Size(87, 48);
+            this.btSeleccionados.TabIndex = 2;
+            this.btSeleccionados.Text = "Restaurar Elementos Seleccionados";
+            this.btSeleccionados.UseVisualStyleBackColor = true;
+            this.btSeleccionados.Click += new System.EventHandler(this.btSeleccionados_Click);
             // 
             // btTodos
             // 
@@ -74,15 +75,15 @@
             this.btTodos.UseVisualStyleBackColor = true;
             this.btTodos.Click += new System.EventHandler(this.btTodos_Click);
             // 
-            // btSeleccionados
+            // btVaciar
             // 
-            this.btSeleccionados.Location = new System.Drawing.Point(337, 35);
-            this.btSeleccionados.Name = "btSeleccionados";
-            this.btSeleccionados.Size = new System.Drawing.Size(87, 48);
-            this.btSeleccionados.TabIndex = 2;
-            this.btSeleccionados.Text = "Restaurar Elementos Seleccionados";
-            this.btSeleccionados.UseVisualStyleBackColor = true;
-            this.btSeleccionados.Click += new System.EventHandler(this.btSeleccionados_Click);
+            this.btVaciar.Location = new System.Drawing.Point(59, 35);
+            this.btVaciar.Name = "btVaciar";
+            this.btVaciar.Size = new System.Drawing.Size(75, 46);
+            this.btVaciar.TabIndex = 0;
+            this.btVaciar.Text = "Vaciar Papelera";
+            this.btVaciar.UseVisualStyleBackColor = true;
+            this.btVaciar.Click += new System.EventHandler(this.btVaciar_Click);
             // 
             // lbPapelera
             // 
@@ -103,12 +104,12 @@
             this.restaurarTodoToolStripMenuItem,
             this.restaurarSeleccionToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 98);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(177, 76);
             // 
             // vaciarPapeleraToolStripMenuItem
             // 
             this.vaciarPapeleraToolStripMenuItem.Name = "vaciarPapeleraToolStripMenuItem";
-            this.vaciarPapeleraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.vaciarPapeleraToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.vaciarPapeleraToolStripMenuItem.Text = "Vaciar Papelera";
             this.vaciarPapeleraToolStripMenuItem.Click += new System.EventHandler(this.btVaciar_Click);
             // 
@@ -139,6 +140,7 @@
             this.Controls.Add(this.lbPapelera);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "fmPapelera";
