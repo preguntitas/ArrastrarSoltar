@@ -13,6 +13,7 @@ namespace ArrastrarSoltar
 {
     public partial class fmArrastrarSoltar : Form
     {
+        fmPapelera VentanaPapelera = new fmPapelera(); // Definimos el objeto VentanaPapelera para poder acceder
         public fmArrastrarSoltar()
         {
             InitializeComponent();
@@ -185,10 +186,11 @@ namespace ArrastrarSoltar
                                           //Se puede elegir entre dejar la ventana como modal ó que sea flotante.
         }
 
-        private void vaciarPapeleraToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            VentanaPapelera.lbPapelera.Items.Clear();//Vaciamos ListBox de fmPapelera
 
+
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
